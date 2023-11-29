@@ -14,6 +14,8 @@ fn main() {
 
         match input.trim() {
             "1" => palindrome_integer::print_solve(),
+            "2" => reverse_integer::print_solve(),
+            "3" => atoi::print_solve(),
             "q" | "Q" => {
                 println!("Exiting...");
                 break;
