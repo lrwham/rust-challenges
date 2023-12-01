@@ -17,18 +17,9 @@ pub fn convert(s: &str) -> i32{
     let mut s: String = s.to_owned();
     let mut value = 0;
 
-    let subtraction_patterns = vec![("IV", 4), ("IX", 9), ("XL", 40), ("XC", 90), ("CD", 400), ("CM", 900)];
+    let patterns = vec![("IV", 4), ("IX", 9), ("XL", 40), ("XC", 90), ("CD", 400), ("CM", 900),("I",1),("V",5),("X",10),("L",50),("C",100),("D",500),("M",1000)];
 
-    for pattern in subtraction_patterns.iter(){
-        while s.contains(pattern.0){
-            value += pattern.1;
-            s = s.replacen(pattern.0, "", 1);
-        }
-    }
-    
-    let normal_patterns = vec![("I",1),("V",5),("X",10),("L",50),("C",100),("D",500),("M",1000)];
-
-    for pattern in normal_patterns.iter(){
+    for pattern in patterns.iter(){
         while s.contains(pattern.0){
             value += pattern.1;
             s = s.replacen(pattern.0, "", 1);
