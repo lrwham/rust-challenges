@@ -43,5 +43,6 @@ mod tests {
         assert_eq!(roman_numeral_to_integer::convert("CD"),400);
         assert_eq!(roman_numeral_to_integer::convert("CM"),900);
         assert_eq!(roman_numeral_to_integer::convert("MCMXCIV"),1994);
+        assert_eq!(roman_numeral_to_integer::convert("MMMCMXCIX"),3999);
     }
 }
