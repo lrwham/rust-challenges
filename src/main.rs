@@ -18,6 +18,7 @@ fn main() {
             "3" => atoi::print_solve(),
             "4" => top_k_frequent::print_solve(),
             "5" => roman_numeral_to_integer::print_solve(),
+            "6" => longest_common_prefix::print_solve(),
             "q" | "Q" => {
                 println!("Exiting...");
                 break;
