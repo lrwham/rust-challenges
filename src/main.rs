@@ -17,6 +17,7 @@ fn main() {
             "2" => reverse_integer::print_solve(),
             "3" => atoi::print_solve(),
             "4" => top_k_frequent::print_solve(),
+            "5" => roman_numeral_to_integer::print_solve(),
             "q" | "Q" => {
                 println!("Exiting...");
                 break;
